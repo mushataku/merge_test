@@ -9,11 +9,12 @@ void plus_2(int *pa);
 int main(){
   int a = 0;
   int *pa = &a;
+  plus_1(pa);
   printf("a:%d\n",a);
 }
 
 void plus_1(int *pa){
-  ;
+  *pa += 1;
 }
 
 void plus_2(int *pa){
